@@ -38,8 +38,9 @@ You will need JDK 11 and Docker available for easiest running of PoC.
 
 ### With docker
 
-1. Run: `./build_and_run.sh`
-2. Navigate to: http://localhost:8080/webjars/swagger-ui/3.36.2/index.html?configUrl=https://xss.smarpo.com/test.json
+1. Run: `docker build -t webjars-xss .`
+2. Run: `docker run -p 8080:8080 webjars-xss`
+3. Navigate to: http://localhost:8080/webjars/swagger-ui/3.36.2/index.html?configUrl=https://xss.smarpo.com/test.json
 
 ### Without docker
 
